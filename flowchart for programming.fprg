@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowchart for programming"/>
+        <attribute name="authors" value="Father Victor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-11 04:41:53 PM"/>
+        <attribute name="created" value="RmF0aGVyIFZpY3RvcjtERVNLVE9QLTZOM0dJVEI7MjAyNi0xMC0xMDsxMjozNjozNyBQTTszNjAz"/>
+        <attribute name="edited" value="RmF0aGVyIFZpY3RvcjtERVNLVE9QLTZOM0dJVEI7MjAyNi0xMC0xMTswNDo0MTo1MyBQTTsyOzM3MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;WELOCOME TO FLOOD REPORTING SYSTEM&quot;" newline="True"/>
+            <declare name="LOCATION" type="String" array="False" size=""/>
+            <declare name="DESCRIPTION" type="String" array="False" size=""/>
+            <declare name="DANGERLEVEL" type="String" array="False" size=""/>
+            <output expression="&quot;Enter the flood location&quot;" newline="True"/>
+            <input variable="location"/>
+            <output expression="&quot;describe what happened during the flood&quot;" newline="True"/>
+            <input variable="description"/>
+            <output expression="&quot;enter the flood danger level(low,medium,or high):&quot;" newline="True"/>
+            <input variable="dangerlevel"/>
+            <if expression="dangerlevel=&quot;high&quot;">
+                <then>
+                    <output expression="&quot;DANGER!high flood risk.please move to a safer place immediately.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="dangerlevel=&quot;medium&quot;">
+                        <then>
+                            <output expression="&quot;WARNING!medium flood risk.stay alert and avoid floded areas.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;LOW FOOD RISK.stay alert and continue monitoring the situation.&quot;" newline="True"/>
+                            <output expression="&quot;THANK YOU!your flood report has been recorded sucessfully.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
